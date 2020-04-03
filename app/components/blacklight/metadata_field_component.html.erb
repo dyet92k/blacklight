@@ -1,0 +1,8 @@
+<%= render(@layout.new(metadata_field: @metadata_field)) do |component| %>
+  <% component.with(:label) do %>
+    <%= render_field_label %>
+  <% end %>
+  <% component.with(:value) do %>
+    <%= @metadata_field.render %>
+  <% end %>
+<% end %>

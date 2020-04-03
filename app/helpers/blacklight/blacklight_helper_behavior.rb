@@ -151,6 +151,7 @@ module Blacklight::BlacklightHelperBehavior
     label = options[:label] || index_field_label(document, field)
     html_escape t(:"blacklight.search.index.#{document_index_view_type}.label", default: :'blacklight.search.index.label', label: label)
   end
+  deprecation_deprecate :render_index_field_label
 
   ##
   # Render the show field label for a document
@@ -174,6 +175,7 @@ module Blacklight::BlacklightHelperBehavior
 
     t(:'blacklight.search.show.label', label: label)
   end
+  deprecation_deprecate :render_document_show_field_label
 
   ##
   # Get the value of the document's "title" field, or a placeholder
