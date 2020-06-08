@@ -115,6 +115,7 @@ module Blacklight::Document
   # extendability architecture
   module ClassMethods
     attr_writer :unique_key
+
     def unique_key
       @unique_key ||= 'id'
     end
